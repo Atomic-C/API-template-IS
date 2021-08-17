@@ -4,104 +4,81 @@
     Layout = "~/Views/_LayoutPage1.cshtml";
 }
 
-<h2>Service</h2>
-
-<!--header-->
-<div class="w3l-top-header">
-    <header id="site-header" class="fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark stroke">
-                <a class="navbar-brand" href="index.html">
-                    <span class="fa fa-thumbs-o-up"></span> Deal
-                </a>
-                <!-- if logo is image enable this
-                <a class="navbar-brand" href="#index.html">
-                    <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-                </a> -->
-                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-                    </span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link effect-3" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link effect-3" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link effect-3" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="phone">
-                        <a href="tel:+65-123-56-78"><span class="fa fa-phone" aria-hidden="true"></span> +65-123-56-78</a>
+<!-- services breadcrumbs -->
+<nav id="breadcrumbs" class="breadcrumbs">
+    <div class="container page-wrapper">
+        <a href="index.html">Home</a> » <span class="breadcrumb_last" aria-current="page">Services</span>
+    </div>
+</nav>
+<!-- /services breadcrumbs -->
+<section class="w3l-services1 py-5" id="services">
+    <div class="container py-lg-3">
+        <div class="header-section mb-5 text-center">
+            <h2>Our Services</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Our Best Services</h3>
+                <h5 class="mt-lg-3 mt-2">
+                    Fusce fringilla tincidunt laoreet volutpat cras varius sit.
+                    metus vitae diam mauris.
+                </h5>
+                <p class="mt-sm-4 mt-3 mb-sm-0 mb-2">
+                    Sed in metus libero. Sed volutpat eget dui ut tempus. Fusce fringilla tincidunt laoreet
+                    Morbi ac metus vitae diam scelerisque malesuada eget eu mauris. Cras varius lorem ac velit pharetra,
+                    non scelerisque mi vulputate. Phasellus bibendum.
+                </p>
+                <a href="#url" class="theme-button btn-primary btn mt-lg-5 mt-4">Learn more</a>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-5">
+                <div class="row">
+                    <div class="col-6 features-with-17-left1">
+                        <a href="#url" class="icon"><img src="~/assets/images/service-icon1.png" alt="" /></a>
+                        <h4><a href="#url">Concept & Strategy</a></h4>
+                        <p class="service-content">Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
+                    </div>
+                    <div class="col-6 features-with-17-left1">
+                        <a href="#url" class="icon"><img src="~/assets/images/service-icon2.png" alt="" /></a>
+                        <h4><a href="#url">Interactive Business</a></h4>
+                        <p class="service-content">Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
+                    </div>
+                    <div class="col-6 features-with-17-left1 mt-5 pt-lg-3">
+                        <a href="#url" class="icon"><img src="~/assets/images/service-icon3.png" alt="" /></a>
+                        <h4><a href="#url">Financial Institution</a></h4>
+                        <p class="service-content">Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
+                    </div>
+                    <div class="col-6 features-with-17-left1 mt-5 pt-lg-3">
+                        <a href="#url" class="icon"><img src="~/assets/images/service-icon4.png" alt="" /></a>
+                        <h4><a href="#url">Worldwide Access</a></h4>
+                        <p class="service-content">Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>
-</div>
-<!--/header-->
-<!-- breadcrum -->
-<section class="w3l-deal-breadcrum">
-    <div class="breadcrum">
-        <div class="container">
-            <p><a href="index.html">Home</a> &nbsp; / &nbsp; Services</p>
+            </div>
         </div>
     </div>
 </section>
-<!-- //breadcrum -->
-<div class="w3l-services1">
-    <section id="grids5-block" class="py-5">
-        <div class="container py-lg-3">
-            <div class="header-section mb-5">
-                <h3>What we provide</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mt-0 grids5-info">
-                    <a href="#url"><img src="~/images/b1.jpg" class="img-fluid img-curve" alt="" /></a>
-                    <h5>Business Deal</h5>
-                    <h4><a href="#url">SEO Solutions</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse? dolores impedit doloremque.</p>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-md-0 mt-5 grids5-info">
-                    <a href="#url"><img src="~/images/b3.jpg" class="img-fluid img-curve" alt="" /></a>
-                    <h5>Business Deal</h5>
-                    <h4><a href="#url">Social Media</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse? dolores impedit doloremque.</p>
-                </div>
-                <div class="col-lg-4 offset-md-3 offset-lg-0 col-md-6 mt-lg-0 mt-5 grids5-info">
-                    <a href="#url"><img src="~/images/b4.jpg" class="img-fluid img-curve" alt="" /></a>
-                    <h5>Business Deal</h5>
-                    <h4><a href="#url">Promotion Service</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse? dolores impedit doloremque.</p>
-                </div>
-            </div>
-        </div>
-</div>  
 <section class="w3l-services2" id="services">
     <div class="mobile-info py-5">
         <div class="container py-lg-3">
-            <div class="header-section mb-5 text-center">
-                <h3>Make Your Beautiful Sites</h3>
+            <div class="header-section mb-5 text-center mx-auto">
+                <h6 class="sub-title">The best products</h6>
+                <h3>How we make your strategy business </h3>
+                <p class="my-3">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Nulla mollis dapibus nunc, ut rhoncus
+                    turpis sodales quis. Integer sit amet mattis quam.
+                </p>
             </div>
             <div class="row mobile-info-inn mx-lg-0">
                 <div class="col-lg-4 mobile-right">
                     <div class="row mobile-right-grids mb-lg-5 mb-4">
                         <div class="col-2 mobile-right-icon">
                             <div class="mobile-icon">
-                                <span class="fa fa-bar-chart"></span>
+                                <span>1</span>
                             </div>
                         </div>
                         <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">Mobile Apps</a></h6>
+                            <h6><a href="#url">Full Security</a></h6>
                             <p>
                                 Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
                                 adipisicing elit.
@@ -111,11 +88,11 @@
                     <div class="row mobile-right-grids mb-lg-5 mb-4">
                         <div class="col-2 mobile-right-icon">
                             <div class="mobile-icon">
-                                <span class="fa fa-laptop icon-fea"></span>
+                                <span>2</span>
                             </div>
                         </div>
                         <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">Marketing</a></h6>
+                            <h6><a href="#url">Best Performance</a></h6>
                             <p>
                                 Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
                                 adipisicing elit.
@@ -125,11 +102,11 @@
                     <div class="row mobile-right-grids">
                         <div class="col-2 mobile-right-icon">
                             <div class="mobile-icon">
-                                <span class="fa fa-line-chart"></span>
+                                <span>3</span>
                             </div>
                         </div>
                         <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">Web Development</a></h6>
+                            <h6><a href="#url">Concept & Strategy</a></h6>
                             <p>
                                 Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
                                 adipisicing elit.
@@ -138,17 +115,17 @@
                     </div>
                 </div>
                 <div class="col-lg-4 mobile-left">
-                    <img src="~/images/women.png" class="img-fluid" alt="">
+                    <img src="~/assets/images/service-circle.jpg" class="img-curve rounded-circle service-img img-fluid" alt="">
                 </div>
                 <div class="col-lg-4 mobile-right">
                     <div class="row mobile-right-grids mb-lg-5 mb-4">
                         <div class="col-2 mobile-right-icon">
                             <div class="mobile-icon">
-                                <span class="fa fa-envelope-o"></span>
+                                <span>4</span>
                             </div>
                         </div>
                         <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">Optimization</a></h6>
+                            <h6><a href="#url">Worldwide Access</a></h6>
                             <p>
                                 Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
                                 adipisicing elit.
@@ -158,11 +135,11 @@
                     <div class="row mobile-right-grids mb-lg-5 mb-4">
                         <div class="col-2 mobile-right-icon">
                             <div class="mobile-icon">
-                                <span class="fa fa-signal icon-fea"></span>
+                                <span>5</span>
                             </div>
                         </div>
                         <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">Web Design</a></h6>
+                            <h6><a href="#url">Interactive Business</a></h6>
                             <p>
                                 Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
                                 adipisicing elit.
@@ -172,7 +149,7 @@
                     <div class="row mobile-right-grids">
                         <div class="col-2 mobile-right-icon">
                             <div class="mobile-icon">
-                                <span class="fa fa-paint-brush icon-fea"></span>
+                                <span>6</span>
                             </div>
                         </div>
                         <div class="col-10 mobile-right-info">
@@ -189,56 +166,166 @@
         </div>
     </div>
 </section>
-<!-- learn1 -->
-<section class="w3l-services3 py-5">
-    <div class="container py-lg-3 mt-3">
-        <div class="row align-items-center">
-            <div class="col-sm-6 book-info">
-                <h3 class="mb-md-4 mb-3">Business Support</h3>
-                <p class="mb-md-5 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam nihil totam reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.</p>
-                <a href="#URL" class="btn btn-outline-secondary theme-button">Read More</a>
+<section class="w3l-services3">
+    <div class="about-inner-cont py-5">
+        <div class="container py-lg-5">
+            <div class="header-section mb-5 text-center mx-auto">
+                <h6 class="sub-title">Features services</h6>
+                <h3>Some More Features </h3>
+                <p class="my-3">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Nulla mollis dapibus nunc, ut rhoncus
+                    turpis sodales quis. Integer sit amet mattis quam.
+                </p>
             </div>
-            <div class="col-sm-6">
-                <img src="~/images/service1.png" class="img-fluid" alt="" />
+
+            <div class="row content-ab-grids">
+                <div class="col-lg-6">
+                    <div class="content-ab-left">
+                        <div class="title-content text-left">
+                            <h3 class="service-title">
+                                Connect people
+                                and ideas
+                            </h3>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet adipisicing elit. Consequuntur odio
+                            voluptatem tenetur
+                            consequatur adipisicing elit.
+                        </p>
+                        <ul class="feature-list my-4">
+                            <li><span class="fa fa-check"></span>Website Designing and Development</li>
+                            <li><span class="fa fa-check"></span>Android and iOs Apps Development </li>
+                            <li><span class="fa fa-check"></span>Successfully Providing Business Solution from 20 years</li>
+                            <li><span class="fa fa-check"></span>Excellence Records </li>
+                        </ul>
+                        <a href="#url" class="theme-button btn-primary btn mb-lg-5 mb-4">Know more</a>
+                        <img src="~/assets/images/b1.jpg" class="img-fluid img-curve" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <div class="content-ab-right">
+                        <img src="~/assets/images/b2.jpg" class="img-fluid img-curve" alt="" />
+                        <div class="title-content text-left mt-5">
+                            <h3 class="service-title">
+                                Work better
+                                together
+                            </h3>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem
+                            tenetur
+                            consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio
+                            voluptatem tenetur
+                            consequatur adipisicing elit.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem
+                            tenetur
+                            consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio
+                            voluptatem tenetur
+                            consequatur adipisicing elit.
+                        </p>
+
+                        <a href="#url" class="theme-button btn-primary btn mt-4">Know more</a>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </section>
-<!-- //learn1 -->
-<!-- learn2 -->
-<section class="w3l-services3 py-5">
-    <div class="container py-lg-3">
-        <div class="row align-items-center">
-            <div class="col-sm-6">
-                <img src="~/images/service2.png" class="img-fluid" alt="" />
-            </div>
-            <div class="col-sm-6 book-info">
-                <h3 class="mb-md-4 mb-3">Capital Management</h3>
-                <p class="mb-md-5 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam nihil totam reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.</p>
-                <a href="#URL" class="btn btn-outline-secondary theme-button">Read More</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- //learn2 -->
-<section class="w3l-services4 py-5">
-    <div class="container py-lg-3">
-        <h3>Ready to start a project ?</h3>
-        <p>Build an online presence with this professional Website Template.</p>
-        <a href="contact.html" class="theme-button btn-primary btn">Get Started</a>
-    </div>
-</section>
-<footer>
 
-    <!-- Template JavaScript -->
-    <!-- stats number counter-->
-    <script src="~/js/jquery.waypoints.min.js"></script>
-    <script src="~/js/jquery.countup.js"></script>
-    <script>$('.counter').countUp();</script>
-    <!-- //stats number counter -->
+<!-- Template JavaScript -->
+<script src="~/assets/js/owl.carousel.js"></script>
 
-    <script src="~/js/jquery.magnific-popup.min.js"></script>
-    <script>$(document).ready(function () {
+<!-- script for testimonials -->
+<script>$(document).ready(function () {
+    $('.owl-two').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: false
+        },
+        1000: {
+          items: 2,
+          nav: false
+        }
+      }
+    })
+  })</script>
+<!-- //testimonials owlcarousel -->
+<!-- script for customers -->
+<script>$(document).ready(function () {
+    $('.owl-three').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 2,
+          nav: false
+        },
+        667: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 4,
+          nav: false
+        }
+      }
+    })
+  })</script>
+<!-- //customers owlcarousel -->
+<!-- responsive tabs -->
+<script src="~/assets/js/easyResponsiveTabs.js"></script>
+
+<!--Plug-in Initialisation-->
+<script type="text/javascript">$(document).ready(function () {
+    //Horizontal Tab
+    $('#parentHorizontalTab').easyResponsiveTabs({
+      type: 'default', //Types: default, vertical, accordion
+      width: 'auto', //auto or any width like 600px
+      fit: true, // 100% fit in a container
+      tabidentify: 'hor_1', // The tab groups identifier
+      activate: function (event) { // Callback function if tab is switched
+        var $tab = $(this);
+        var $info = $('#nested-tabInfo');
+        var $name = $('span', $info);
+        $name.text($tab.text());
+        $info.show();
+      }
+    });
+  });</script>
+
+<script src="~/assets/js/jquery.magnific-popup.min.js"></script>
+<script>$(document).ready(function () {
     $('.popup-with-zoom-anim').magnificPopup({
       type: 'inline',
 
@@ -272,102 +359,13 @@
     });
   });</script>
 
-    <script src="~/js/owl.carousel.js"></script>
-
-    <!-- testimonials for owlcarousel -->
-    <script>$(document).ready(function () {
-    $('.owl-one').owlCarousel({
-      loop: true,
-      margin: 0,
-      nav: false,
-      responsiveClass: true,
-      autoplay: false,
-      autoplayTimeout: 5000,
-      autoplaySpeed: 1000,
-      autoplayHoverPause: false,
-      responsive: {
-        0: {
-          items: 1,
-          nav: false
-        },
-        480: {
-          items: 1,
-          nav: false
-        },
-        667: {
-          items: 1,
-          nav: false
-        },
-        1000: {
-          items: 1,
-          nav: false
-        }
-      }
-    })
-  })</script>
-    <!-- //testimonials script for owlcarousel -->
-    <!-- for blog carousel slider -->
-    <script>$(document).ready(function () {
-    $('.owl-two').owlCarousel({
-      stagePadding: 20,
-      margin: 15,
-      nav: false,
-      loop: false,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        }
-      }
-    })
-  })</script>
-    <!-- //for blog carousel slider -->
-
-    <script>var lFollowX = 0,
-    lFollowY = 0,
-    x = 0,
-    y = 0,
-    friction = 1 / 30;
-
-  function animate() {
-    x += (lFollowX - x) * friction;
-    y += (lFollowY - y) * friction;
-
-    translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
-
-    $('.banner-image').css({
-      '-webit-transform': translate,
-      '-moz-transform': translate,
-      'transform': translate
-    });
-
-    window.requestAnimationFrame(animate);
-  }
-
-  $(window).on('mousemove click', function (e) {
-
-    var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-    var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-    lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
-    lFollowY = (10 * lMouseY) / 100;
-
-  });
-
-  animate();</script>
-
-    <!-- disable body scroll which navbar is in active -->
-    <script>$(function () {
-    $('.navbar-toggler').click(function () {
-      $('body').toggleClass('noscroll');
-    })
-  });</script>
-    <!--/MENU-JS-->
-    <script>$(window).on("scroll", function () {
+<!-- stats number counter-->
+<script src="~/assets/js/jquery.waypoints.min.js"></script>
+<script src="~/assets/js/jquery.countup.js"></script>
+<script>$('.counter').countUp();</script>
+<!-- //stats number counter -->
+<!--/MENU-JS-->
+<script>$(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 80) {
@@ -391,5 +389,4 @@
       }
     });
   });</script>
-    <!--//MENU-JS-->
-
+<!--//MENU-JS-->

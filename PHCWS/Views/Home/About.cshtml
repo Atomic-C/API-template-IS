@@ -4,294 +4,580 @@
     Layout = "~/Views/_LayoutPage1.cshtml";
 }
 
-<h2>About</h2>
+<!--header-->
+<header id="site-header" class="fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg stroke">
+            <a class="navbar-brand" href="index.html">
+                <span class="fa fa-handshake-o"></span> Masterwork
+            </a>
+            <!-- if logo is image enable this
+            <a class="navbar-brand" href="#index.html">
+                <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+            </a> -->
+            <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </span>
+            </button>
 
-<!-- breadcrum -->
-<section class="w3l-deal-breadcrum">
-    <div class="breadcrum">
-        <div class="container">
-            <p><a href="index.html">Home</a> &nbsp; / &nbsp; About</p>
-        </div>
-    </div>
-</section>
-<!-- //breadcrum -->
-<!-- about 1 -->
-<section class="w3l-about1" id="about">
-    <div id="cwp23-block" class="py-5">
-        <div class="container py-lg-3">
-            <div class="header-section mb-3">
-                <h3>About us</h3>
-            </div>
-            <div class="row cwp23-content align-items-lg-center">
-                <div class="cwp23-img col-lg-6 pt-md-4">
-                    <img src="~/images/b2.jpg" class="img-fluid img-curve" alt="" />
-                </div>
-                <div class="cwp23-text col-lg-6 mt-5 mt-lg-0 pl-lg-4">
-                    <div class="cwp23-title">
-                        <h3>Corporate solutions for your business</h3>
-                    </div>
-                    <div class="row cwp23-text-cols">
-                        <div class="column col-md-6 mt-lg-5 mt-4">
-                            <h4>Web Development</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                        </div>
-                        <div class="column col-md-6 mt-lg-5 mt-4">
-                            <h4>Business Idea</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                        </div>
-                        <div class="column col-md-6 mt-lg-5 mt-4">
-                            <h4>Mobile Apps</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                        </div>
-                        <div class="column col-md-6 mt-lg-5 mt-4">
-                            <h4>Administration</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- about 1 -->
-<section class="w3l-about2">
-    <div class="new-block top-bottom">
-        <div class="container">
-            <div class="middle-section">
-                <div class="section-width">
-                    <h5>Business Deal</h5>
-                    <h2>Start your Business today with this professional template.</h2>
-                </div>
-                <div class="link-list-menu">
-                    <p class="mb-5">
-                        Develop first class solutions
-                        for your clients. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sapiente!
-                    </p>
-                    <a href="#about.html" class="btn btn-outline-light theme-button">Read More </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="w3l-about3 py-5" id="services">
-    <div class="container py-lg-3">
-        <div class="aboutgrids row">
-            <div class="col-lg-6 aboutgrid2">
-                <img src="~/images/laptop.jpg" alt="about image" class="img-fluid img-curve" />
-            </div>
-            <div class="col-lg-6 aboutgrid1 my-lg-0 my-5">
-                <h4>Work process</h4>
-                <p>
-                    Lorem ipsum dolor sit amet adipisicing elit. Quae blanditiis porro facere qui
-                    impedit dolor doloribus.
-                </p>
-                <ul class="services-list mt-4">
-                    <li>Professional Design</li>
-                    <li>Highly Qualified</li>
-                    <li>Modern Workflow</li>
-                    <li>Real-Time Results</li>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item @@home-active">
+                        @* Fix *@
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item @@services-active">
+                        @* Fix *@
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item @@contact-active">
+                        @* Fix *@
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ml-lg-3 ml-0 mt-lg-0 mt-3">
+                        <a class="btn btn-outline-primary theme-button" href="contact.html">Schedule a Demo</a>
+                    </li>
                 </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--/header-->
+<!-- about breadcrumbs -->
+<nav id="breadcrumbs" class="breadcrumbs">
+    <div class="container page-wrapper">
+        <a href="index.html">Home</a> » <span class="breadcrumb_last" aria-current="page">About</span>
+    </div>
+</nav>
+<!-- /about breadcrumbs -->
+<section class="w3l-about1" id="about">
+    <div id="content-with-photo4-block" class="pt-5">
+        <div class="container py-md-3">
+            <div class="header-section mb-5 text-center">
+                <h2>About Us</h2>
+            </div>
+            <div class="cwp4-two row">
 
-                <a href="services.html" class="btn btn-outline-secondary theme-button">Learn More</a>
+                <div class="cwp4-text col-lg-6">
+                    <h3>The Best Choice For Your Successful Business!</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud.
+                    </p>
+
+                    <ul class="cont-4">
+                        <li><span class="fa fa-check"></span>Website Designing and Development</li>
+                        <li><span class="fa fa-check"></span>Android and iOs Apps Development </li>
+                        <li><span class="fa fa-check"></span>Successfully Providing Business Solution from 20 years</li>
+                        <li><span class="fa fa-check"></span>Excellence Records </li>
+                    </ul>
+                </div>
+                <div class="cwp4-image col-lg-6 pl-lg-5 mt-lg-0 mt-5">
+                    <img src="~/assets/images/b5.jpg" class="img-curve img-fluid" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="w3l-about2">
+    <div class="features py-5">
+        <div class="container py-lg-3">
+
+            <div class="fea-gd-vv row ">
+                <div class="float-lt feature-gd col-lg-4 col-sm-6">
+
+                    <div class="icon-info">
+                        <h5>Our History 1795</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="float-mid feature-gd col-lg-4 col-sm-6 mt-sm-0 mt-4">
+
+                    <div class="icon-info">
+                        <h5>The power of business</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud.
+                        </p>
+                    </div>
+                </div>
+                <div class="float-rt feature-gd col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+
+                    <div class="icon-info">
+                        <h5>120 Customer service</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- services block4 -->
+<div class="w3l-services py-5">
+    <div class="container principles-grids principles-grids1 py-lg-3">
+        <div class="header-section mb-5 text-center mx-auto">
+            <h6 class="sub-title">Features</h6>
+            <h3>The Largest Business Expert ! </h3>
+            <p class="my-3">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nulla mollis dapibus nunc, ut rhoncus
+                turpis sodales quis. Integer sit amet mattis quam.
+            </p>
+        </div>
+        <div class="scrollbar -services-scroll">
+            <div class="row abt-btm pt-4">
+                <div class="col-lg-3 col-sm-6 bottom-gds">
+                    <div class="elite-services1">
+                        <div class="bott-img">
+                            <div class="icon-holder editContent">
+                                <span class="fa fa-usd service-icon" aria-hidden="true"></span>
+                            </div>
+                            <h4 class="mission">Best Financial Advice</h4>
+                            <div class="description">
+                                <p>Enean eget dolor dolor sit amet commodo ligula</p>
+                                <a href="services.html" class="editContent">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 bottom-gds mt-sm-0 mt-5">
+                    <div class="elite-services2">
+                        <div class="bott-img">
+                            <div class="icon-holder editContent">
+                                <span class="fa fa-user-circle-o service-icon" aria-hidden="true"></span>
+                            </div>
+                            <h4 class="mission">Authorised Finance Brand</h4>
+                            <div class="description">
+                                <p>Commodo ligula eget dolor dolor sit amet ligula</p>
+                                <a href="services.html" class="editContent">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 bottom-gds mt-lg-0 mt-5">
+                    <div class="elite-services3">
+                        <div class="bott-img">
+                            <div class="icon-holder editContent">
+                                <span class="fa fa-hand-peace-o service-icon" aria-hidden="true"></span>
+                            </div>
+                            <h4 class="mission">Compehensive Advices</h4>
+                            <div class="description">
+                                <p>Enean eget dolor dolor sit amet commodo ligula</p>
+                                <a href="services.html" class="editContent">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 bottom-gds mt-lg-0 mt-5">
+                    <div class="elite-services4">
+                        <div class="bott-img">
+                            <div class="icon-holder editContent">
+                                <span class="fa fa-laptop service-icon" aria-hidden="true"></span>
+                            </div>
+                            <h4 class="mission">Monitoring & Review</h4>
+                            <div class="description">
+                                <p>Commodo ligula eget dolor dolor sit amet ligula</p>
+                                <a href="services.html" class="editContent">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- teams1 -->
-<section class="w3l-team" id="team">
-    <div class="teams1 py-5">
-        <div class="container py-lg-3">
-            <div class="teams1-content">
-                <div class="header-section">
-                    <h3 class="head">Meet our Experts </h3>
+<!-- //services block4 -->
+<section class="w3l-about4" id="about">
+    <div class="new-block py-5">
+        <div class="container py-lg-5">
+            <div class="middle-section text-center">
+                <div class="header-section text-center mx-auto">
+                    <h6 class="sub-title">Creative Solutions</h6>
+                    <h3>
+                        Watch Our
+                        Two Minute Intro
+                    </h3>
+                    <p class="my-3">
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                        Nulla mollis dapibus nunc, ut rhoncus
+                        turpis sodales quis. Integer sit amet mattis quam.
+                    </p>
                 </div>
-                <div class="text-center">
-                    <div class="row align-team-items">
-                        <div class="item col-sm-6 col-md-4">
-                            <div class="team-info">
-                                <div class="column">
-                                    <a href="#URL"><img src="~/images/team1.png" alt="" class="img-fluid" /></a>
-                                </div>
-                                <div class="team-member">
-                                    <h3 class="name-pos"><a href="#URL">Sophia Madison</a></h3>
-                                    <p>CEO / Co-Founder</p>
-                                    <div class="social">
-                                        <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                        <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                        <a href="#instagram" class="instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-sm-6 col-md-4">
-                            <div class="team-info">
-                                <div class="column">
-                                    <a href="#URL"><img src="~/images/team2.png" alt="" class="img-fluid" /></a>
-                                </div>
-                                <div class="team-member">
-                                    <h3 class="name-pos"><a href="#URL">Oliver Atticus</a></h3>
-                                    <p>Entrepreneur</p>
-                                    <div class="social">
-                                        <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                        <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                        <a href="#instagram" class="instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-sm-6 col-md-4">
-                            <div class="team-info">
-                                <div class="column">
-                                    <a href="#URL"><img src="~/images/team3.png" alt="" class="img-fluid" /></a>
-                                </div>
-                                <div class="team-member">
-                                    <h3 class="name-pos"><a href="#URL">Harold</a></h3>
-                                    <p>Developer</p>
-                                    <div class="social">
-                                        <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                        <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                        <a href="#instagram" class="instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-sm-6 col-md-4">
-                            <div class="team-info">
-                                <div class="column">
-                                    <a href="#URL"><img src="~/images/team4.png" alt="" class="img-fluid" /></a>
-                                </div>
-                                <div class="team-member">
-                                    <h3 class="name-pos"><a href="#URL">Lawrence</a></h3>
-                                    <p>Designer</p>
-                                    <div class="social">
-                                        <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                        <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                        <a href="#instagram" class="instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-sm-6 col-md-4">
-                            <div class="team-info">
-                                <div class="column">
-                                    <a href="#URL"><img src="~/images/team5.png" alt="" class="img-fluid" /></a>
-                                </div>
-                                <div class="team-member">
-                                    <h3 class="name-pos"><a href="#URL">Lucas Jacob</a></h3>
-                                    <p>Financial Examiner</p>
-                                    <div class="social">
-                                        <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                        <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                        <a href="#instagram" class="instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-sm-6 col-md-4">
-                            <div class="team-info">
-                                <div class="column">
-                                    <a href="#URL"><img src="~/images/team6.png" alt="" class="img-fluid" /></a>
-                                </div>
-                                <div class="team-member">
-                                    <h3 class="name-pos"><a href="#URL">Camilla</a></h3>
-                                    <p>Manager</p>
-                                    <div class="social">
-                                        <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                        <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                        <a href="#instagram" class="instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- //teams1 -->
-<section class="w3l-index6" id="testimonials">
-    <div class="testimonials py-5">
-        <div class="container text-center py-lg-3">
-            <div class="header-section white text-center mx-auto">
-                <h3>
-                    What they said
-                    about us
-                </h3>
-            </div>
-            <div class="row">
-                <div class="col-md-10 mx-auto">
-                    <div class="owl-one owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="slider-info mt-lg-4 mt-3">
-                                <div class="img-circle">
-                                    <img src="~/images/emp2.jpg" class="img-fluid rounded" alt="client image">
-                                </div>
-                                <div class="message">
-                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id accusantium
-                                    officia quod quasi necessitatibus perspiciatis Harum error provident
-                                    quibusdam tenetur."
-                                </div>
-                                <div class="name"> Sophia Madison</div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider-info mt-lg-4 mt-3">
-                                <div class="img-circle">
-                                    <img src="~/images/emp1.jpg" class="img-fluid rounded" alt="client image">
-                                </div>
-                                <div class="message">
-                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id accusantium
-                                    officia quod quasi necessitatibus perspiciatis Harum error provident
-                                    quibusdam tenetur."
-                                </div>
-                                <div class="name"> Lucas Jacob</div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider-info mt-lg-4 mt-3">
-                                <div class="img-circle">
-                                    <img src="~/images/emp3.jpg" class="img-fluid rounded" alt="client image">
-                                </div>
-                                <div class="message">
-                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id accusantium
-                                    officia quod quasi necessitatibus perspiciatis Harum error provident
-                                    quibusdam tenetur."
-                                </div>
-                                <div class="name"> Anthony</div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider-info mt-lg-4 mt-3">
-                                <div class="img-circle">
-                                    <img src="~/images/emp4.jpg" class="img-fluid rounded" alt="client image">
-                                </div>
-                                <div class="message">
-                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit id accusantium
-                                    officia quod quasi necessitatibus perspiciatis Harum error provident
-                                    quibusdam tenetur."
-                                </div>
-                                <div class="name"> Charlotte</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                <div class="history-info mt-5">
+                    <div class="position-relative">
+                        <img src="~/assets/images/b9.jpg" class="img-fluid img-curve video-popup-image" alt="video-popup">
+                        <!-- <a href="#popup-video" class="play-view text-center position-absolute">
+                                    <span class="video-play-icon">
+                                        <span class="fa fa-play"></span>
+                                    </span>
+                                </a> -->
 
-<!-- jQuery -->
-<script src="~/js/jquery-3.4.1.slim.min.js"></script>
+                        <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center position-absolute">
+                            <span class="video-play-icon">
+                                <span class="fa fa-play"></span>
+                            </span>
+                        </a>
+
+                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                            <iframe src="https://www.youtube.com/embed/a5KYlHNKQB8" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 request-quote">
+                    <!-- request a demo form popup -->
+                    <button type="button" class="btn btn-primary theme-button" data-toggle="modal" data-target="#exampleModalCenter">
+                        Request a quote
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header px-4">
+                                    <h5 class="modal-title request-demo-title" id="exampleModalCenterTitle">Get Free Quote</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body demo-request p-4">
+                                    <form action="/" method="GET">
+                                        <div class="form-group">
+                                            <!-- <label for="NameInput">Name:</label> -->
+                                            <input type="text" class="form-control" name="name" placeholder="Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <!-- <label for="exampleInputEmail1">Email address:</label> -->
+                                            <input type="email" class="form-control" name="emailid" placeholder="Email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <!-- <label for="CompanyInput">Company:</label> -->
+                                            <input type="text" class="form-control" name="company" placeholder="Company" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <!-- <label for="CompanyInput">Designation:</label> -->
+                                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                                        </div>
+                                        <div class="text-right">
+                                            <button type="submit" class="btn btn-primary theme-button" data-toggle="modal" data-target="#exampleModal">Submit Now</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- request a demo form popup -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- customers Section -->
+<section class="w3l-customers pb-5">
+    <div class="container py-lg-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-three owl-carousel owl-theme logo-view">
+                    <div class="item">
+                        <img src="~/assets/images/logo1.jpg" alt="company-logo" class="img-fluid">
+                    </div>
+                    <div class="item">
+                        <img src="~/assets/images/logo2.jpg" alt="company-logo" class="img-fluid">
+
+                    </div>
+                    <div class="item">
+                        <img src="~/assets/images/logo3.jpg" alt="company-logo" class="img-fluid">
+
+                    </div>
+                    <div class="item">
+                        <img src="~/assets/images/logo4.jpg" alt="company-logo" class="img-fluid">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //customers Section -->
+<!--/team-sec-->
+<section class="w3l-team">
+    <div class="team py-5">
+        <div class="container py-lg-5">
+            <div class="header-section text-center mx-auto">
+                <h6 class="sub-title">Our Team Members</h6>
+                <h3>Our Creative Team</h3>
+                <p class="my-3">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Nulla mollis dapibus nunc, ut rhoncus
+                    turpis sodales quis. Integer sit amet mattis quam.
+                </p>
+            </div>
+            <div class="row team-row pt-3 mt-5">
+                <div class="col-lg-3 col-sm-6 team-wrap">
+                    <div class="team-info">
+                        <div class="column position-relative img-circle">
+                            <a href="#url"><img src="~/assets/images/team1.jpg" alt="" class="img-fluid team-image" /></a>
+                        </div>
+                        <div class="column-btm">
+                            <h3 class="name-pos"><a href="#url">Gwen Johnson</a></h3>
+                            <p>Founder & CEO</p>
+                            <div class="social">
+                                <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                                <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end team member -->
+
+                <div class="col-lg-3 col-sm-6 team-wrap mt-sm-0 pt-sm-0 mt-4 pt-2">
+
+                    <div class="team-info">
+                        <div class="column position-relative img-circle">
+                            <a href="#url"><img src="~/assets/images/team2.jpg" alt="" class="img-fluid team-image" /></a>
+                        </div>
+                        <div class="column-btm">
+                            <h3 class="name-pos"><a href="#url">Daniel Roberto</a></h3>
+                            <p>Regional Manager</p>
+                            <div class="social">
+                                <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                                <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end team member -->
+
+                <div class="col-lg-3 col-sm-6 team-wrap mt-lg-0 pt-lg-0 mt-4 pt-2">
+                    <div class="team-info">
+                        <div class="column position-relative img-circle">
+                            <a href="#url"><img src="~/assets/images/team3.jpg" alt="" class="img-fluid team-image" /></a>
+                        </div>
+                        <div class="column-btm">
+                            <h3 class="name-pos"><a href="#url">Dhony Abraham</a></h3>
+                            <p>Managing Partner</p>
+                            <div class="social">
+                                <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                                <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end team member -->
+                <!-- end team member -->
+
+                <div class="col-lg-3 col-sm-6 team-wrap mt-lg-0 pt-lg-0 mt-4 pt-2">
+
+                    <div class="team-info">
+                        <div class="column position-relative img-circle">
+                            <a href="#url"><img src="~/assets/images/team4.jpg" alt="" class="img-fluid team-image" /></a>
+                        </div>
+                        <div class="column-btm">
+                            <h3 class="name-pos"><a href="#url">Marko Dugonji</a></h3>
+                            <p>Cheif Executive</p>
+                            <div class="social">
+                                <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                                <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end team member -->
+                <div class="col-lg-3 col-sm-6 team-wrap mt-4 pt-2">
+                    <div class="team-info">
+                        <div class="column position-relative img-circle">
+                            <a href="#url"><img src="~/assets/images/team5.jpg" alt="" class="img-fluid team-image" /></a>
+                        </div>
+                        <div class="column-btm">
+                            <h3 class="name-pos"><a href="#url">Anthony</a></h3>
+                            <p>Engineering Officer</p>
+                            <div class="social">
+                                <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                                <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end team member -->
+
+                <div class="col-lg-3 col-sm-6 team-wrap mt-4 pt-2">
+
+                    <div class="team-info">
+                        <div class="column position-relative img-circle">
+                            <a href="#url"><img src="~/assets/images/team6.jpg" alt="" class="img-fluid team-image" /></a>
+                        </div>
+                        <div class="column-btm">
+                            <h3 class="name-pos"><a href="#url">Emma Stone</a></h3>
+                            <p>Team Leader</p>
+                            <div class="social">
+                                <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                                <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end team member -->
+
+                <div class="col-lg-3 col-sm-6 team-wrap mt-4 pt-2">
+                    <div class="team-info">
+                        <div class="column position-relative img-circle">
+                            <a href="#url"><img src="~/assets/images/team7.jpg" alt="" class="img-fluid team-image" /></a>
+                        </div>
+                        <div class="column-btm">
+                            <h3 class="name-pos"><a href="#url">Rhoda Byrd</a></h3>
+                            <p>Technology Officer</p>
+                            <div class="social">
+                                <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                                <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end team member -->
+                <!-- end team member -->
+
+                <div class="col-lg-3 col-sm-6 team-wrap mt-4 pt-2">
+
+                    <div class="team-info">
+                        <div class="column position-relative img-circle">
+                            <a href="#url"><img src="~/assets/images/team8.jpg" alt="" class="img-fluid team-image" /></a>
+                        </div>
+                        <div class="column-btm">
+                            <h3 class="name-pos"><a href="#url">Max Stoiber</a></h3>
+                            <p>Manager</p>
+                            <div class="social">
+                                <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                                <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end team member -->
+            </div>
+        </div>
+</section>
+<!--//team-sec-->
+<section class="w3l-index6 py-5">
+    <div class="container py-md-3 text-center">
+        <div class="header-section text-center mx-auto">
+            <h3>Ready to build your own brand community? </h3>
+            <p class="my-3">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nulla mollis dapibus nunc, ut rhoncus
+                turpis sodales quis. Integer sit amet mattis quam.
+            </p>
+        </div>
+        <div class="buttons mt-5">
+            <a href="contact.html" class="btn btn-outline-primary mr-2 theme-button">Book a Demo</a>
+            <a href="contact.html" class="btn btn-primary theme-button ml-2">Get Started</a>
+        </div>
+    </div>
+</section>
 
 <!-- Template JavaScript -->
-<!-- stats number counter-->
-<script src="~/js/jquery.waypoints.min.js"></script>
-<script src="~/js/jquery.countup.js"></script>
-<script>$('.counter').countUp();</script>
-<!-- //stats number counter -->
+<script src="~/assets/js/owl.carousel.js"></script>
 
-<script src="~/js/jquery.magnific-popup.min.js"></script>
+<!-- script for testimonials -->
+<script>$(document).ready(function () {
+    $('.owl-two').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: false
+        },
+        1000: {
+          items: 2,
+          nav: false
+        }
+      }
+    })
+  })</script>
+<!-- //testimonials owlcarousel -->
+<!-- script for customers -->
+<script>$(document).ready(function () {
+    $('.owl-three').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 2,
+          nav: false
+        },
+        667: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 4,
+          nav: false
+        }
+      }
+    })
+  })</script>
+<!-- //customers owlcarousel -->
+<!-- responsive tabs -->
+<script src="~/assets/js/easyResponsiveTabs.js"></script>
+
+<!--Plug-in Initialisation-->
+<script type="text/javascript">$(document).ready(function () {
+    //Horizontal Tab
+    $('#parentHorizontalTab').easyResponsiveTabs({
+      type: 'default', //Types: default, vertical, accordion
+      width: 'auto', //auto or any width like 600px
+      fit: true, // 100% fit in a container
+      tabidentify: 'hor_1', // The tab groups identifier
+      activate: function (event) { // Callback function if tab is switched
+        var $tab = $(this);
+        var $info = $('#nested-tabInfo');
+        var $name = $('span', $info);
+        $name.text($tab.text());
+        $info.show();
+      }
+    });
+  });</script>
+
+<script src="~/assets/js/jquery.magnific-popup.min.js"></script>
 <script>$(document).ready(function () {
     $('.popup-with-zoom-anim').magnificPopup({
       type: 'inline',
@@ -326,6 +612,9 @@
     });
   });</script>
 
-<script src="~/js/owl.carousel.js"></script>
-
-<footer>
+<!-- stats number counter-->
+<script src="~/assets/js/jquery.waypoints.min.js"></script>
+<script src="~/assets/js/jquery.countup.js"></script>
+<script>$('.counter').countUp();</script>
+<!-- //stats number counter -->
+<!--/MENU-JS-->
