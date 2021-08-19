@@ -14446,10 +14446,10 @@ nav ul li {
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-position: center;
         /* background-attachment: fixed; */
-        background-size: contain;
+        background-size: cover;
         display: grid;
         align-items: center;
-        padding-top: 16em;
+        padding-top: 34em;
     }
 
     .w3l-index1 .content-photo img {
