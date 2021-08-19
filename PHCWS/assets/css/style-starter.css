@@ -14141,7 +14141,7 @@ a.dropdown-item:hover:before {
 .navbar-expand-lg .navbar-nav .nav-link {
     text-transform: capitalize;
     transition: all 0.5s ease;
-    padding: 14px 0;
+    padding: 14px 10;
     font-size: 16px;
     font-weight: 400;
     color: var(--title-color);
