@@ -14445,11 +14445,11 @@ nav ul li {
         background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0)), url(../images/banner.jpg);
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-position: center;
-        /*background-attachment: fixed;*/
+        /* background-attachment: fixed; */
         background-size: contain;
         display: grid;
         align-items: center;
-        padding-top: 5rem;
+        padding-top: 16em;
     }
 
     .w3l-index1 .content-photo img {
