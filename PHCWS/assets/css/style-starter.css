@@ -5949,8 +5949,8 @@ fieldset:disabled a.btn {
 
     .btn-outline-primary:hover {
         color: #fff;
-        background-color: #dc4f72;
-        border-color: #dc4f72;
+        background-color: #db6827; /*Change hover color here*/
+        border-color: #db6827;
     }
 
     .btn-outline-primary:focus, .btn-outline-primary.focus {
