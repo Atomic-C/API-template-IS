@@ -363,11 +363,13 @@
     <Content Include="assets\images\banner.jpg" />
     <Content Include="assets\images\bg.jpg" />
     <Content Include="assets\images\contact.jpg" />
+    <Content Include="assets\images\infosyncrologo.png" />
     <Content Include="assets\images\logo1.jpg" />
     <Content Include="assets\images\logo2.jpg" />
     <Content Include="assets\images\logo3.jpg" />
     <Content Include="assets\images\logo4.jpg" />
     <Content Include="assets\images\main.png" />
+    <Content Include="assets\images\phcapi.png" />
     <Content Include="assets\images\s1.png" />
     <Content Include="assets\images\s2.png" />
     <Content Include="assets\images\s3.png" />
