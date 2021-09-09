@@ -5943,13 +5943,14 @@ fieldset:disabled a.btn {
         }
 
 .btn-outline-primary {
-    color: #db6827;
+    color: white;
     border-color: #db6827;
+    background-color: #d8661a;
 }
 
     .btn-outline-primary:hover {
-        color: #fff;
-        background-color: #db6827; /*Change hover color here*/
+        color: #d8661a;
+        background-color: white; /*Change hover color here*/
         border-color: #db6827;
     }
 
