@@ -364,6 +364,7 @@
     <Content Include="assets\images\bg.jpg" />
     <Content Include="assets\images\contact.jpg" />
     <Content Include="assets\images\infologocustom.png" />
+    <Content Include="assets\images\infologonew.png" />
     <Content Include="assets\images\infosyncrologo.png" />
     <Content Include="assets\images\logo1.jpg" />
     <Content Include="assets\images\logo2.jpg" />
